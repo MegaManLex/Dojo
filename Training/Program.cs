@@ -10,11 +10,67 @@ namespace Training
     {
         static void Main(string[] args)
         {
-            
+           
 
             Console.ReadLine();
         }
+        //created accessible, and executible function that can be used in the Main Function. In this case "Calculator();"
+        static void Calculator()
+        {
+            //Decorative header to introduce the operation.
+            Console.WriteLine("vvvvvvvvvvvvvvv");
+            Console.WriteLine("Calculator!");
+            Console.WriteLine("^^^^^^^^^^^^^^");
 
+            //defining data types used
+            double num1 = 0;
+            double num2 = 0;
+            double result = 0;
+
+            //organizing foreground colors for easier readability for User Input
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("Give me a number! : ");
+            num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.ForegroundColor= ConsoleColor.Blue;
+            Console.WriteLine("Give me a second number : ");
+            num2 = Convert.ToDouble(Console.ReadLine());
+
+            //Introducing several common operators
+            Console.WriteLine("Type in an operator : ");
+            Console.WriteLine("+ to add");
+            Console.WriteLine("- to subtract");
+            Console.WriteLine("* to multiply");
+            Console.WriteLine("/ to divide");
+
+            //initiating various protocals depending on user input
+            Console.ForegroundColor=ConsoleColor.Magenta;
+            switch (Console.ReadLine())
+            {
+                case "+":
+                    result = num1 + num2;
+                    Console.WriteLine($"Adds up to... : {num1} + {num2} = " + result);
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    Console.WriteLine($"Subtracts to... : {num1} - {num2} = " + result);
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    Console.WriteLine($"Should multiply to... : {num1} * {num2} = " + result);
+                    break;
+                case "/":
+                    result = num1 / num2;
+                    Console.WriteLine($"Splits into... : {num1} / {num2} = " + result);
+                    break;
+
+                    //Using default text in case someone inputs certain shenanigans 
+                default:
+                    Console.WriteLine("That's not a thing...");
+                    break;
+            }
+
+        }
 
         //Created accessible, and executable program that can be called under the main function. In this case, "MadLibs();".
         static void MadLib()
@@ -23,6 +79,11 @@ namespace Training
             Console.ForegroundColor = ConsoleColor.Green;
 
             string name, color, pluralNoun, celebrity;
+
+            //Decorative text to introduce the function
+            Console.WriteLine("vvvvvvvvvvvvvvv");
+            Console.WriteLine("Small MadLibs!");
+            Console.WriteLine("^^^^^^^^^^^^^^");
 
             //Telling VS to print questions to the user
             Console.WriteLine("Hey! What's your name?...");
