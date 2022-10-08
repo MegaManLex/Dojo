@@ -17,17 +17,19 @@ namespace Training
         }
         //created accessible, and executible function that can be used in the Main Function via Call. In this case "FizzBuzz();"
         static void FizzBuzz()
-        {
+        {//created for loop to define the number data type, and add singular increments to allow for the loop to continue until it hits 100.
             for (int num = 1; num <= 100; num++)
-
+                //if a number in this array is divisible by both 5 and 3 then we will get a combination of verbiage.
                 if (num % 3 == 0 && num % 5 == 0)
                 {
                     Console.WriteLine("FizzBuzz");
                 }
+            // if the nubmer in the array is divisible by 3 then we will get a single word from the resulted analization
                 else if (num % 3 == 0)
                 {
                     Console.WriteLine("Fizz");
                 }
+            //if the number is divisible by 5 we will see a variant of the verbiage that was previously displayed
                 else if (num % 5 == 0)
                 {
                     Console.WriteLine("Buzz");
