@@ -16,7 +16,7 @@ namespace Training
         }
 
 
-        //Created accessible, and executable program that can be called under the main function. In this case, "MadLibs();"
+        //Created accessible, and executable program that can be called under the main function. In this case, "MadLibs();".
         static void MadLib()
         {
             //made multiple additions to the text color of each question using the ForegroundColor change command
