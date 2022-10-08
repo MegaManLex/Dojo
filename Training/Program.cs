@@ -10,19 +10,23 @@ namespace Training
     {
         static void Main(string[] args)
         {
-            MadLib();
+            
 
             Console.ReadLine();
         }
 
+
+        //Created accessible, and executable program that can be called under the main function. In this case, "MadLibs();"
         static void MadLib()
         {
+            //made multiple additions to the text color of each question using the ForegroundColor change command
             Console.ForegroundColor = ConsoleColor.Green;
 
             string name, color, pluralNoun, celebrity;
 
-
+            //Telling VS to print questions to the user
             Console.WriteLine("Hey! What's your name?...");
+            //User inputs various forms of personal data.
             name = Console.ReadLine();
 
             Console.ForegroundColor = ConsoleColor.Blue;
@@ -38,6 +42,7 @@ namespace Training
             celebrity = Console.ReadLine();
 
             Console.ForegroundColor = ConsoleColor.Yellow;
+            //Final input for VS to respond to the user using print that I placed. Extra lines added to improve readability. 
             Console.WriteLine(" Well it's nice to meet you " + name + ". \n My favorite color is actually red, not " + color + " \n I'm also an octopus not a " + pluralNoun + ". \n Why is " + celebrity + " your favorite famouse person?");
         }
     }
