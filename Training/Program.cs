@@ -9,11 +9,36 @@ namespace Training
     class Dojo
     {
         static void Main(string[] args)
-        {
-           
+        {           
+
+            
 
             Console.ReadLine();
         }
+        //created accessible, and executible function that can be used in the Main Function via Call. In this case "FizzBuzz();"
+        static void FizzBuzz()
+        {
+            for (int num = 1; num <= 100; num++)
+
+                if (num % 3 == 0 && num % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (num % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (num % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(num);
+                }
+
+        }
+
         //created accessible, and executible function that can be used in the Main Function. In this case "Calculator();"
         static void Calculator()
         {
