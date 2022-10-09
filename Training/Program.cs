@@ -1,23 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Training
+﻿namespace Training
 {
     class Dojo
     {
-        static void Main(string[] args)
-        {           
-
-            
-
+        static void Main()
+        {
+            //use the space on this specific comment to call either FizzBuzz(); Calculator(); BubbleSort(); or MadLib();
+                      
             Console.ReadLine();
+        }
+        //Created executible function that can be used in the Main Function Comment space, in this case "BubbleSort();"
+        static void BubbleSort()
+        {
+            //Changing color scheme to suit bubble title
+            Console.ForegroundColor = ConsoleColor.Blue;
+            //simple header
+            Console.WriteLine("\n BubbleSort Time! \n");
+            //introducing an array of random numbers
+            int[] arr = { 4, 6, 1, 67, 345, 3, 34, 512, 342, 251 };
+            //using a loop with a subtraction to stay within the boundaries of the array, and not go outside of it.
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                //using a positional loop to keep variables side by side
+                for (int j = 0; j < arr.Length - i - 1; j++)
+                {
+                    //this -if- statment will be used to organize, and determine which interger is larger, or smaller
+                    if (arr[j] > arr[j + 1])
+                    {//defining data, and positionals
+                        int temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            //loop made to scan the array to check if everything was executed correctly
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
         }
         //created accessible, and executible function that can be used in the Main Function via Call. In this case "FizzBuzz();"
         static void FizzBuzz()
-        {//created for loop to define the number data type, and add singular increments to allow for the loop to continue until it hits 100.
+        {
+            //created for loop to define the number data type, and add singular increments to allow for the loop to continue until it hits 100.
             for (int num = 1; num <= 100; num++)
                 //if a number in this array is divisible by both 5 and 3 then we will get a combination of verbiage.
                 if (num % 3 == 0 && num % 5 == 0)
@@ -50,9 +74,9 @@ namespace Training
             Console.WriteLine("^^^^^^^^^^^^^^");
 
             //defining data types used
-            double num1 = 0;
-            double num2 = 0;
-            double result = 0;
+            double num1;
+            double num2;
+            double result;
 
             //organizing foreground colors for easier readability for User Input
             Console.ForegroundColor = ConsoleColor.Red;
@@ -136,4 +160,3 @@ namespace Training
     }
 
 }
-
