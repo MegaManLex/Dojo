@@ -5,6 +5,8 @@
         static void Main()
         {
             //use the space on this specific comment to call either FizzBuzz(); Calculator(); BubbleSort(); or MadLib(); 
+            FizzBuzz();
+
             Console.ReadLine();
         }
         //Created executible function that can be used in the Main Function Comment space, in this case "BubbleSort();" .
@@ -45,17 +47,23 @@
                 //if a number in this array is divisible by both 5 and 3 then we will get a combination of verbiage.
                 if (num % 3 == 0 && num % 5 == 0)
                 {
+                    Console.ForegroundColor= ConsoleColor.Magenta;
                     Console.WriteLine("FizzBuzz");
+                    Console.ResetColor();
                 }
             // if the nubmer in the array is divisible by 3 then we will get a single word from the resulted analization
                 else if (num % 3 == 0)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Fizz");
+                    Console.ResetColor ();
                 }
             //if the number is divisible by 5 we will see a variant of the verbiage that was previously displayed
                 else if (num % 5 == 0)
                 {
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("Buzz");
+                    Console.ResetColor () ;
                 }
                 else
                 {
