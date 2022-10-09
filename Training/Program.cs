@@ -4,11 +4,10 @@
     {
         static void Main()
         {
-            //use the space on this specific comment to call either FizzBuzz(); Calculator(); BubbleSort(); or MadLib();
-                      
+            //use the space on this specific comment to call either FizzBuzz(); Calculator(); BubbleSort(); or MadLib(); 
             Console.ReadLine();
         }
-        //Created executible function that can be used in the Main Function Comment space, in this case "BubbleSort();"
+        //Created executible function that can be used in the Main Function Comment space, in this case "BubbleSort();" .
         static void BubbleSort()
         {
             //Changing color scheme to suit bubble title
