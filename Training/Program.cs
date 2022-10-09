@@ -1,11 +1,35 @@
-﻿namespace Training
+﻿using System;
+
+namespace Training
 {
     class Dojo
     {
         static void Main()
         {
             //use the space on this specific comment to call either FizzBuzz(); Calculator(); BubbleSort(); or MadLib(); 
-            FizzBuzz();
+            Console.WriteLine("Tickets are 5 bucks! Please put in the money! : ");
+
+            int cash = Convert.ToInt32(Console.ReadLine());
+
+            if (cash < 5)
+            {
+                Console.WriteLine("That's not enough money! Please add more! ");
+            }
+            else if (cash == 5)
+                    {
+
+                Console.WriteLine("Thank you! Here is your ticket!");
+            }
+            else if (cash > 5)
+            {
+                int change = cash - 5;
+                Console.WriteLine("Here is your ticket, and " + change + " this is your change! Thank you!");
+            }
+            else
+            {
+                Console.ReadLine();
+
+            }
 
             Console.ReadLine();
         }
@@ -42,6 +66,8 @@
         //created accessible, and executible function that can be used in the Main Function via Call. In this case "FizzBuzz();"
         static void FizzBuzz()
         {
+            //Header for operation.
+            Console.WriteLine("\n **FizzBuzz!!!** \n");
             //created for loop to define the number data type, and add singular increments to allow for the loop to continue until it hits 100.
             for (int num = 1; num <= 100; num++)
                 //if a number in this array is divisible by both 5 and 3 then we will get a combination of verbiage.
