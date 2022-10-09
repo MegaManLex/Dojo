@@ -6,10 +6,38 @@ namespace Training
     {
         static void Main()
         {
-            //use the space on this specific comment to call either FizzBuzz(); Calculator(); BubbleSort(); TicketMaster(); or MadLib(); 
+            //use the space on this specific comment to call either FizzBuzz(); ThreeDoors(); Calculator();
+            //BubbleSort(); TicketMaster(); or MadLib(); 
             
 
+
             Console.ReadLine();
+        }
+
+        static void ThreeDoors()
+        {
+            Console.WriteLine("Bob's Big Givaeaway");
+            Console.Write("Choose a door: 1, 2 or 3:");
+            string userValue = Console.ReadLine();
+
+            if (userValue == "1")
+            {
+                string message = "You won a new car!";
+                Console.WriteLine(message);
+            }
+            else if (userValue == "2")
+            {
+                Console.WriteLine("You won a boat!");
+            }
+            else if (userValue == "3")
+            {
+                Console.WriteLine("You won a lollipop!");
+            }
+            else
+            {
+                Console.WriteLine("Please try to play the game");
+
+            }
         }
         static void TicketMaster()
         {
