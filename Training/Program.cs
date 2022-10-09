@@ -6,7 +6,13 @@ namespace Training
     {
         static void Main()
         {
-            //use the space on this specific comment to call either FizzBuzz(); Calculator(); BubbleSort(); or MadLib(); 
+            //use the space on this specific comment to call either FizzBuzz(); Calculator(); BubbleSort(); TicketMaster(); or MadLib(); 
+            
+
+            Console.ReadLine();
+        }
+        static void TicketMaster()
+        {
             Console.WriteLine("Tickets are 5 bucks! Please put in the money! : ");
 
             int cash = Convert.ToInt32(Console.ReadLine());
@@ -16,22 +22,16 @@ namespace Training
                 Console.WriteLine("That's not enough money! Please add more! ");
             }
             else if (cash == 5)
-                    {
+            {
 
                 Console.WriteLine("Thank you! Here is your ticket!");
             }
-            else if (cash > 5)
+            else
             {
                 int change = cash - 5;
                 Console.WriteLine("Here is your ticket, and " + change + " this is your change! Thank you!");
             }
-            else
-            {
-                Console.ReadLine();
 
-            }
-
-            Console.ReadLine();
         }
         //Created executible function that can be used in the Main Function Comment space, in this case "BubbleSort();" .
         static void BubbleSort()
